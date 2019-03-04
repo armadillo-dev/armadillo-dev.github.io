@@ -19,8 +19,8 @@ locale                   : "en-US"
 title                    : "armadillo's blog"
 title_separator          : "-"
 name                     : "armadillo"
-description              : "An amazing website."
-url                      : "https://armadill-dev.github.io"
+description              : "front-end developer's blog"
+url                      : "https://armadillo-dev.github.io"
 baseurl                  : ""
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -106,10 +106,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "armadillo"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  bio              : "front-end developer"
+  location         : "Seoul, Korea"
   email            :
   links:
     - label: "Email"
@@ -142,7 +142,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/armadillo-dev/"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
