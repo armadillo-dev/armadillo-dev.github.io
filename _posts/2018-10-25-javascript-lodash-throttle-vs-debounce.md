@@ -1,5 +1,5 @@
 ---
-title: "[javascript] Event bubbling & capturing"
+title: "[lodash] throttle vs debounce"
 date: 2018-10-25 10:54:00 -0400
 categories: javascript
 tags: javascript lodash
