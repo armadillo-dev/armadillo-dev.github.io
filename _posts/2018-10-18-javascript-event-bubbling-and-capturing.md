@@ -1,7 +1,8 @@
 ---
 title: "[javascript] Event bubbling & capturing"
 date: 2018-10-18 11:22:00 -0400
-categories: javascript event
+categories: javascript
+tags: javascript event
 ---
 
 javascript event handling에 있어서 필수적인 event bubbling & capturing에 대해 알아보자.

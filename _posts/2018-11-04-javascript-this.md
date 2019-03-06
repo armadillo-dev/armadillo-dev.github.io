@@ -1,7 +1,8 @@
 ---
 title: "[javascript] this 톺아보기"
 date: 2018-11-04 9:33 -0400
-categories: javascript this
+categories: javascript
+tags: javascript this
 ---
 
 javascript에서 ``this``는 호출 환경에 따라 그 대상이 달라진다. 다음과 같은 환경에서 서로 다른 ``this``를 가지게 된다.

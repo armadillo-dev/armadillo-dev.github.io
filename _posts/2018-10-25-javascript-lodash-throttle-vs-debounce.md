@@ -1,7 +1,8 @@
 ---
 title: "[javascript] Event bubbling & capturing"
 date: 2018-10-25 10:54:00 -0400
-categories: javascript lodash
+categories: javascript
+tags: javascript lodash
 ---
 
 ## 1.throttle
