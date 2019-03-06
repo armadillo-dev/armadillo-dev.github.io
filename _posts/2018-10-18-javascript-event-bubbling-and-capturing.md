@@ -1,6 +1,6 @@
 ---
 title: "[javascript] Event bubbling & capturing"
-date: 2017-10-20 11:22:00 -0400
+date: 2018-10-18 11:22:00 -0400
 categories: javascript event
 ---
 
