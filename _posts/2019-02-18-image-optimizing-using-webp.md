@@ -1,8 +1,8 @@
 ---
 title: "[html & css]  WebP 파일을 이용한 이미지 최적화"
 date: 2019-02-18 11:36 -0400
-categories: html, css
-tags: html, css, image, webp
+categories: html css
+tags: html css image webp
 ---
 
 ## WebP 파일이란?
