@@ -19,14 +19,15 @@ tags: javascript electron youtube
 
 Youtube Music의 경우 별도의 API가 제공되지 않고(Youtube API는 제공되고 있다), 이미 웹사이트가 잘 만들어져 있어서 별도의 개발 없이 기존 웹사이트를 감싸기만 해서 데스크탑 앱을 만들기로 했다.
 
-다음 Github 주소에 접속하면 간단한 빌드 방법을 확인 할 수 있다.
-https://github.com/armadillo-dev/youtube-music-app
+다음 Github 주소에 접속하면 간단한 빌드 방법을 확인 할 수 있다. [저장소 바로가기][link-github]
 
-![Youtube Music Desktop Application Home](/asserts/images/youtube-music-desktop-app-main.png)
+![Youtube Music Desktop Application Home](/asserts/images/youtube-music-desktop-app-main.png)  
 *Youtube Music Desktop Application Home*
 
-![Youtube Music Desktop Application Playlist](/asserts/images/youtube-music-desktop-app-playlist.png)
+![Youtube Music Desktop Application Playlist](/asserts/images/youtube-music-desktop-app-playlist.png)  
 *Youtube Music Desktop Application Playlist*
 
 개발자가 좋은 이유 중 하나는 필요한 것을 직접 만들어 쓸 수 있다는 점이다 :-)
 앞으로도 필요한 것들은 직접 만들어서 공유하려고 한다.
+
+[link-github]: https://github.com/armadillo-dev/youtube-music-app
