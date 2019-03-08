@@ -1,5 +1,5 @@
 ---
 title: "Posts by Tag"
-layout: categories
+layout: tags
 permalink: /tags/
 ---
