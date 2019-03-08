@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "armadillo"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/asserts/images/img-profile-armadillo.jpg"
   bio              : "front-end developer"
   location         : "Seoul, Korea"
   email            :
@@ -126,7 +126,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/armadillo-dev"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
