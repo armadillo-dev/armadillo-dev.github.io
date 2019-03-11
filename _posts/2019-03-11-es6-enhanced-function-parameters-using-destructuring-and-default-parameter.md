@@ -1,8 +1,8 @@
 ---
 title: "[ES6] destructuring과 default parameter를 이용한 항샹된 함수 매개변수 정의 방법"
-date: 2019-03-11 20:00:00 -0400
+date: 2019-03-11 16:00:00 -0400
 categories: javascript
-tags: javascript es6 
+tags: javascript es6 function
 ---
 
 ES6에서 추가된 기능인 [destructuring][link-destructuring]과 [default prameter][link-default-parameter]를 이용해 단계적으로 함수의 매개변수를 향상시켜서 정의하는 방법을 알아보자.
