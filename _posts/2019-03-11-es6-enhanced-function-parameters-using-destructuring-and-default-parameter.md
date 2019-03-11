@@ -50,7 +50,7 @@ setElementBackgroundColor('#el', null, container); // id가 el인 엘리먼트�
 
 ### 3. `color`와 `parent` 매개변수를 입력하지 않았을 경우 기본값을 별도로 지정해주어야 한다
 
-현재 color와 parent 값은 기본값 지정을 위해 각각 parentDOM, backgroundColor라는 변수를 새로 정의하고 있다.
+현재 `color`와 `parent` 값은 기본값 지정을 위해 각각 `parentDOM`, `backgroundColor`라는 변수를 새로 정의하고 있다.
 
 ## Destructuring을 이용한 개선
 
@@ -92,7 +92,7 @@ function setElementBackgroundColor(selector, { color, parent }) {
 ```
 
 이제 `setElementBackgroundColor` 함수에는 `options`에는 `color`, `parent` 두 개의 항목이 존재한다는 것을 명확히 알 수 있게 되었다.
-또한, `parent`의 값만 지정하고 싶을 경우 `{ parent: someDomNode }`와 같이 color를 입력하지 않고 
+또한, `parent`의 값만 지정하고 싶을 경우 `{ parent: someDomNode }`와 같이 color를 입력하지 않고 사용이 가능하다.
 
 ## Default parameter를 이용한 개선
 
