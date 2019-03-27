@@ -35,7 +35,7 @@ lifecycle은 크게 Mounting, Updating, Unmounting으로 구분되며 각 항목
 
 - [`componentWillUnmount()`](#componentWillUnmount)
 
-## `render()` {render}
+## `render()` {#render}
 
 ```js
   render()
