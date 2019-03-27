@@ -13,7 +13,7 @@ React에서 사용되는 Component lifecycle method의 종류와 사용처를 �
 각각의 lifecycle method들을 설명하기 전에 먼저 전체 다이어 그램을 통해 구조를 설명하고자 한다.
 lifecycle은 크게 Mounting, Updating, Unmounting으로 구분되며 각 항목에는 여러개의 method가 존재한다.
 
-![React lifecycle moethods diagram](/asserts/images/react-component-lifecycle-diagram.png)
+![React lifecycle moethods diagram](/asserts/images/react-lifecycle-diagram.png)
 *React lifecycle moethods diagram*
 
 ### Mounting
