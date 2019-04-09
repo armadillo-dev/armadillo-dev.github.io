@@ -272,6 +272,6 @@ const foundPerson(people) {
 ```
 
 ## 관련 게시물
-- [[Refactoring] 7장 객체 간의 기능 이동 요약](/book/refactoring-07-move-features-between-objects/)
+- [[Refactoring] 7장 객체 간의 기능 이동 요약](/book/refactoring-07-moving-features-between-objects/)
 
 [link-book]: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=20793053
