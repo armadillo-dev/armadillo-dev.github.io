@@ -18,7 +18,7 @@ arr.forEach(currentValue[, index[, array]])[, thisArg]);
 
 `forEach`는 배열의 원소를 순회하면서 `callback` 함수를 실행한다. `callback` 함수는 `currentValue`, `index`, `array` 세 개의 인자를 사용 할 수 있다. `currentValue`에는 각 원소의 값이 들어가므로 `for`문과 유사한 형태로 사용 할 수 있다.
 
-주로 반복문을 대체하는 역할로 사용된다.
+주로 전체 원소를 대상으로 특정 로직을 수행 할 때 사용된다.
 
 ### `forEach` vs `for`
 
@@ -49,7 +49,7 @@ itemIds.forEach(removeItem)
 
 1번 예제는 각 원소의 값을 로그에 출력한다.
 
-2번 예제의 경우 원소를 순회하며 특정 함수를 호출한다. 사실아래 설명할 `map`으로 `Promise` 배열을 받은 뒤 `Promise.all`로 삭제하는게 더 낫지만, 이 게시물의 취지는 forEach에 대한 설명이므로 더 `Promise`에 대한 자세한 내용은 [이 게시물](https://armadillo-dev.github.io/javascript/javascript-tips-of-promise/)을 참고하자.
+2번 예제의 경우 원소를 순회하며 특정 함수를 호출한다. 사실 아래 설명할 `map`으로 `Promise` 배열을 받은 뒤 `Promise.all`로 삭제하는게 더 낫지만, 이 게시물의 취지는 forEach에 대한 설명이므로 더 `Promise`에 대한 자세한 내용은 [이 게시물](https://armadillo-dev.github.io/javascript/javascript-tips-of-promise/)을 참고하자.
 
 ## `map`
 
@@ -86,7 +86,7 @@ arr.reduce(callback(accumulator, currentValue[, index[, array]])[, initialValue]
 
 `reduce`는 각 배열의 원소를 순회하며 `callback` 함수를 실행시킨다. `callback` 함수는 `accumulator`, `currentValue`, `index`, `array`를 인자로 받는다.
 
-여기서 중요한 포인트는 `accumulator`이다. `accumulator`는 현재까지 누적된 결과값을 뜻한다. `callback` 함수에서 리턴한 값은 다음 `callback` 함수의 `accumulator` 값이 된다. 이를 통해 누적된 값을 계산 할 수 있다. `initialValue` 값을 입력하면 첫번째 `callback`함수 실행에서 `accumulator` 값이 된다.
+여기서 중요한 포인트는 `accumulator`이다. `accumulator`는 현재까지 누적된 결과값을 가진다. `callback` 함수에서 리턴한 값은 다음 `callback` 함수의 `accumulator` 값이 된다. 이를 통해 누적된 값을 계산 할 수 있다. `initialValue` 값을 입력하면 첫번째 `callback`함수 실행에서 `accumulator` 값이 된다.
 
 주로 배열을 하나의 값으로 만들 때 사용된다. 이를 다른식으로 표현하면 벡터(Vector)를 스칼라(Scalar)로 만든다고 할 수 있다.
 
@@ -173,7 +173,7 @@ const armadillo3 = accounts.find(account => account.id === 'armadillo3') // { id
 
 1번 예제는 10보다 큰 숫자를 찾는다. `20`과 `30` 모두 10보다 큰 숫자이지만, `20`가 먼저 `callback` 함수로 실핼되기 때문에 최종 결과는 20이 된다.
 
-2번 예제는 여러 개정을 가진 배열에서 특정 계정을 찾는 작업을 수행한다.`
+2번 예제는 여러 개정을 가진 배열에서 특정 계정을 찾는 작업을 수행한다.
 
 ## `some`
 
@@ -207,9 +207,7 @@ const hasGreaterThanTen = arr2.some((num) => {
 
 ## 결론
 
-javascript에서는 다양한 메서드를 통해 배열을 조작 할 수 있다. 이러한 메서드들을 잘 활용하면 기존의 반복문을 대부분 제거 할 수 있고, 코드 또한 간결해진다.
-
-이 게시물에서 다루지 못한 다양한 메서드들안 [이 링크](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array#%EB%A9%94%EC%84%9C%EB%93%9C_2){:target="_blank"}에서 확인할 수 있다.
+javascript에서는 다양한 메서드를 통해 배열을 조작 할 수 있다. 이러한 메서드들을 잘 활용하면 기존의 반복문을 대부분 제거 할 수 있고, 코드 또한 간결해진다.이 게시물에서 다루지 못한 다양한 메서드들은 [이 링크](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array#%EB%A9%94%EC%84%9C%EB%93%9C_2){:target="_blank"}에서 확인할 수 있다.
 
 ## 참고자료
 
