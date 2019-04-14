@@ -1,6 +1,6 @@
 ---
 title: "[ES6] 배열(array) 관련 메서드 소개 및 활용"
-date: 2019-04-13 00:00
+date: 2019-04-14 19:15
 categories: es6 javascript
 tags: es6 array
 description: "ES6에 들어서면서 배열과 관련된 많은 메서드를 활용 할 수 있게 되었다. 관련 메서드들을 소개하고 각각의 활용 사례를 살펴보자."
