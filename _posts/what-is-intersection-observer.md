@@ -3,7 +3,7 @@ title: "[Javascript] IntersectionObserver API 설명과 사용 방법"
 date: 2019-04-30 23:00:00
 categories: javascript
 tags: javascript Intersection​Observer
-description: "IntersectionObserver는 DOM 엘리먼트가 뷰포트상에 노출되었는지 여부를 비동기적으로 감시하는 API이다. MDN에서는 IntersectionObserver를 통해 다음과 같은 것들을 할 수 있다고 설명한다."
+description: "IntersectionObserver는 DOM 엘리먼트가 뷰포트상에 노출되었는지 여부를 비동기적으로 감시하는 API이다. 이번 게시물을 통해 기존 방법의 문제점과 IntersectionObserver를 이용하면 어떻게 문제점을 해결 할 수 있는지 알아보자."
 ---
 
 ## Intersection​Observer 란?
