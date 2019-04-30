@@ -464,5 +464,4 @@ class MfDateSub {
 ## 관련 게시물
 - [[Refactoring] 6장 메서드 정리 요약](/book/refactoring-06-composing-methods/)
 
-
 [link-book]: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=20793053
