@@ -53,7 +53,7 @@ document.addEventListener('scroll', () => {
 
 ### 기존 방법의 문제점
 
-기존에는 대상 이미지 또는 엘리먼트가 뷰포트 내에 존재하는지 유무를 판별하기 위해 [`element.getBoundingClientRect`](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect){_target="_blank"} 함수를 이용했다. 이 함수는 때때로 유용하지만, 성능적 이슈가 발생한다. `element.getBoundingClientRect`가 호출되면 브라우저는 해당 엘리먼트의 크기와 위치값을 계산한다. 그리고 이 과정에서 reflow가 발생하게 된다. 간헐적인 사용이라면 크게 무리가 되지 않지만 아래 예제와 같이 scroll 이벤트와 함께 사용될 경우 메인 스레드가 과부하 될 수 있다.
+기존에는 대상 이미지 또는 엘리먼트가 뷰포트 내에 존재하는지 유무를 판별하기 위해 [`element.getBoundingClientRect`](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect){:target="_blank"} 함수를 이용했다. 이 함수는 때때로 유용하지만, 성능적 이슈가 발생한다. `element.getBoundingClientRect`가 호출되면 브라우저는 해당 엘리먼트의 크기와 위치값을 계산한다. 그리고 이 과정에서 reflow가 발생하게 된다. 간헐적인 사용이라면 크게 무리가 되지 않지만 아래 예제와 같이 scroll 이벤트와 함께 사용될 경우 메인 스레드가 과부하 될 수 있다.
 
 또한, `iframe`를 사용 할 때, 부모 창의 도메인이 `iframe` 내부의 도메인과 다를 경우 부모 창의로의 접근이 허용되지 않아 `iframe` 자체적으로 동적 로딩 기능을 구현 할 수 없었다.
 
