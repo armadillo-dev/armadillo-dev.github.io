@@ -462,6 +462,9 @@ class MfDateSub {
 ```
 
 ## 관련 게시물
+
 - [[Refactoring] 6장 메서드 정리 요약](/book/refactoring-06-composing-methods/)
+- [[Refactoring] 7장 객체 간의 기능 이동 요약](/book/refactoring-07-moving-features-between-objects/)
+- [[Refactoring] 8장 데이터 체계화](/book/refactoring-08-organizing-data/)
 
 [link-book]: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=20793053
