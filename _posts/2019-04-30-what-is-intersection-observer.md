@@ -102,7 +102,7 @@ Array
 
 아래 예제는 이 글을 쓰면서 참고한 [레진 코믹스의 기술 블로그에 있는 예제](https://tech.lezhin.com/2017/07/13/intersectionobserver-overview){:target="_blank"}이다. 개발자 도구의 네트워크 탭을 열어서 확인해보면, 스크롤을 내려야지만 이미지 로딩을 한다는 것을 알 수 있다.
 
-<iframe width="600" height="400" src="https://cdn.rawgit.com/fallroot/intersectionobserver-examples/master/demo-lazyload.html"></iframe>
+<iframe width="90%" height="400" src="https://cdn.rawgit.com/fallroot/intersectionobserver-examples/master/demo-lazyload.html"></iframe>
 
 ![IntersectionObserver를 이용한 이미지 동적 로딩](/asserts/images/lazy-loading-with-intersection-observer.gif)
 
@@ -151,7 +151,7 @@ observer.observe(document.getElementById('loader'))
 
 아래 예제는 마찬가지로 [레진 코믹스의 기술 블로그에 있는 예제](https://tech.lezhin.com/2017/07/13/intersectionobserver-overview){:target="_blank"}이다. 스크롤을 내리면 계속해서 추가 노드가 생성되는 것을 확인 할 수 있다.
 
-<iframe width="600" height="300" src="https://cdn.rawgit.com/fallroot/intersectionobserver-examples/master/demo-infinitescroll.html"></iframe>
+<iframe width="90%" height="300" src="https://cdn.rawgit.com/fallroot/intersectionobserver-examples/master/demo-infinitescroll.html"></iframe>
 
 ## Polyfill
 
