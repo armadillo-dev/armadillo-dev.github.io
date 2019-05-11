@@ -22,7 +22,8 @@ UI Component Framework는 버튼, 폼 양식, 다이얼로그 등과 같이 자�
 
 생산성은 UI Component Framework의 최대 장점이 아닐까 생각한다. 단 몇 줄의 코드만 작성하면 멋진 UI의 컴포넌트들을 사용 할 수 있다. 사용자는 HTML, CSS에 대한 깊은 이해가 없어도 빠르게 화면을 구성 할 수 있다.
 
-[//codepen.io/armadillo-dev167/embed/Mdaxpg/?height=311&theme-id=0&default-tab=html,result](//codepen.io/armadillo-dev167/embed/Mdaxpg/?height=311&theme-id=0&default-tab=html,result)
+<iframe height="265" style="width: 100%;" scrolling="no" title="Vuetify example" src="//codepen.io/armadillo-dev167/embed/Mdaxpg/?height=265&theme-id=0&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+</iframe>
 *Vuetify를 이용해 구현한 간단한 예제*
 
 또한, 대부분의 UI Component Framework에서는 그리드 시스템을 제공하고 있다. 이를 이용하면 레이아웃을 쉽게 구성 할 수 있으며, 모바일/태블릿 환경에 대한 대응도 수월하다.
@@ -65,17 +66,17 @@ UI Component Framework가 본인의 생각과 다르게 동작하는 경우가 �
 
 ### 3. DOM 노드의 증가
 
-DOM 노드의 증가는 네트워크, 런타임, 메모리 방면의 성능 이슈를 야기 시킬 수 있다([관련 글](https://developers.google.com/web/tools/lighthouse/audits/dom-size){:target="_blank"}). 때문에 불필요한 DOM 노드는 최대한 제거해야 한다. 하지만 UI Component Framework를 사용하면 의도치 않게 DOM 노드가 증가한다. 내장되어 있는 다양한 옵션에 대응하기 위해서, 또는 컴포넌트 자체의 UI를 위해서 노드들이 발생하기 때문이다. 
+DOM 노드의 증가는 네트워크, 런타임, 메모리 방면의 성능 이슈를 야기 시킬 수 있다([관련 글](https://developers.google.com/web/tools/lighthouse/audits/dom-size){:target="_blank"}). 때문에 불필요한 DOM 노드는 최대한 제거해야 한다. 하지만 UI Component Framework를 사용하면 의도치 않게 DOM 노드가 증가한다. 내장되어 있는 다양한 옵션에 대응하기 위해서, 또는 컴포넌트 자체의 UI를 위해서 노드들이 발생하기 때문이다.
 
 <iframe height="265" style="width: 100%;" scrolling="no" title="v-select vs select" src="//codepen.io/armadillo-dev167/embed/xNObbE/?height=265&theme-id=0&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
-`v-select`와 `select` 비교
+*`v-select`와 `select` 비교*
 
 아래는 `v-select`를 표현하기 위해 필요한 DOM 구조이다. `option` 영역이 제외 되었는대도 10개 이상의 DOM노드가 사용되고 있다.
 
 ![v-select에 필요한 DOM 노드들](/asserts/images/v-select-dom-tree-3320bfed-77fa-4c6f-87bc-8ef108c05e1c.png)
-*v-select*에 필요한 DOM 노드들
+*`v-select`에 필요한 DOM 노드들*
 
 ## 마무리
 
