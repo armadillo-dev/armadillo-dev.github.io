@@ -21,7 +21,7 @@ Iterable은 반복 가능한 객체를 의미한다. Iterable로 평가된 값�
 **Iterable이 되기 위해서는 다음 사항을 준수해야 한다.**
 
 1. 객체 내에 `[Symbol.iterator]`(= `@@iterator`) 메서드가 존재해야 한다.
-2. `[Symbol.iterator]` 는 **Iterator 객체**를 반환해야 한다.
+2. `[Symbol.iterator]` 메서드는 **Iterator 객체**를 반환해야 한다.
 
 ```js
 const iterable = {
@@ -45,7 +45,7 @@ Iterator는 Iterable 객체에서 반복을 실행하는 반복기를 뜻한다.
 1. 객체 내에 `next` 메서드가 존재해야 한다.
 2. `next` 메서드는 **IteratorResult 객체**를 반환해야 한다.
 3. IteratorResult 객체는 `done: boolean`과 `value: any` 프로퍼티를 가진다.
-4. 이전 `next` 메서드의 호출의 결과로 `done` 값이 `true`를 리턴했다면, 이후 호출에 대한 `done` 값도 `true`여야 한다.
+4. 이전 `next` 메서드 호출의 결과로 `done` 값이 `true`를 리턴했다면, 이후 호출에 대한 `done` 값도 `true`여야 한다.
 
 위와 같이 Iterator 객체가 반환하는 IteratorResult 객체는 `done`과 `value` 프로퍼티를 가진다. `done`은 Iterator의 반복이 모두 완료되었는지를 판별한다. Iterator는 `done` 값이 `true`가 될 때까지 반복을 수행한다. `value`는 각 반복 수행을 하면서 반환하는 값이다.
 
@@ -122,7 +122,7 @@ for (num of iter) console.log(num) // 3, 4, ..., 9
 
 ## 마무리
 
-이번 글을 통해 Iterator와 Iterable에 대한 개념을 정리 해볼 수 있었다. 하지만, 직접 Iterator/Iterable 객체를 만드는 것은 번거로운 일이다. 그래서 자바스크립트는 이용해 손쉽게 well-formed iterable을 생성 할 수 있도록 **[제네레이터 함수](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/function*){:target="_blank"}**를 제공한다. 다음에는 제네레이터에 대해 알아보는 포스팅을 하고자 한다.
+이번 글을 통해 Iterator와 Iterable에 대한 개념을 정리 해볼 수 있었다. 하지만, 직접 Iterator/Iterable 객체를 만드는 것은 번거로운 일이다. 그래서 자바스크립트는 손쉽게 well-formed iterable을 생성 할 수 있는 **[제네레이터 함수](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/function*){:target="_blank"}**를 제공한다. 다음에는 제네레이터에 대해 알아보는 포스팅을 하고자 한다.
 
 ## 참고문서
 
