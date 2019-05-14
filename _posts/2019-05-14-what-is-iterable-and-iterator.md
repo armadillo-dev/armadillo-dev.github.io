@@ -1,4 +1,10 @@
-# [ES6] Iterable과 Iterator 이해하기
+---
+title: "[Javascript] Iterable과 Iterator 이해하기"
+date: 2019-05-14 23:00:00
+categories: javascript
+tags: javascript es6
+description: "자바스크립트에서 Iterable과 Iterator이 무엇이고 어떻게 사용할 수 있는지 정리해보았다."
+---
 
 자바스크립트의 레퍼런스를 살펴보면 Iterable, Iterator라는 단어를 자주 접할 수 있다. 또한 ES6에 새롭게 추가된 `Set`, `Map` 객체는 Iterable로 평가된다. 심지어 항상 사용하는 `String`, `Array` 또한  Iterable로 평가된다.
 
