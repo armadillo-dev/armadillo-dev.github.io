@@ -89,34 +89,35 @@ const wellFormedIterable = { // Iterator 객체
 
 well-form iterable의 장점은, 자기 자신의 상태를 기억 할 수 있다는 것이다. 이로 인해 Iterator는 얼마나 반복을 진행했는지 기억 할 수 있다.
 
-    const iterable = {
-      i: 0,
-      next(){
-        while(this.i < 10) {
-          return { value: this.i++, done: false }
-        }
-        return { done: true }
-      },
-      [Symbol.iterator]() {
-        return this
-      }
+```js
+const iterable = {
+  i: 0,
+  next(){
+    while(this.i < 10) {
+      return { value: this.i++, done: false }
     }
-    
-    const iter = iterable[Symbol.iterator]()
-    
-    console.log(iter.next()) // { value: 0, done: false }
-    console.log(iter.next()) // { value: 1, done: false }
-    console.log(iter.next()) // { value: 2, done: false }
-    
-    // 앞에서 next()를 호출했기 때문에 3부터 시작된다.
-    for (num of iter) console.log(num) // 3, 4, ..., 9 
-    
+    return { done: true }
+  },
+  [Symbol.iterator]() {
+    return this
+  }
+}
+
+const iter = iterable[Symbol.iterator]()
+
+console.log(iter.next()) // { value: 0, done: false }
+console.log(iter.next()) // { value: 1, done: false }
+console.log(iter.next()) // { value: 2, done: false }
+
+// 앞에서 next()를 호출했기 때문에 3부터 시작된다.
+for (num of iter) console.log(num) // 3, 4, ..., 9
+```
 
 ## Iterable 만들어보기
 
 원하는 만큼 홀수를 출력하는 iterable 객체를 만들어보자. 만들어진 객체는 앞서 말했듯 [`for...of`문](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/for...of){:target="_blank"}, [전개 문법(Spread syntax)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax){:target="_blank"}, [구조 분해 할당(Destructuring)](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment){:target="_blank"} 등과 함께 사용 할 수 있다. 물론 `next` 메서드를 직접 호출하는 것도 가능하다.
 
-<iframe height="265" style="width: 100%;" scrolling="no" title="Custom iterable" src="//codepen.io/armadillo-dev167/embed/mYrKPQ/?height=265&theme-id=0&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="400" style="width: 100%;" scrolling="no" title="Custom iterable" src="//codepen.io/armadillo-dev167/embed/mYrKPQ/?height=400&theme-id=0&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true">
 </iframe>
 
 ## 마무리
