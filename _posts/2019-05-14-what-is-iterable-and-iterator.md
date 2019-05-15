@@ -8,7 +8,7 @@ description: "자바스크립트에서 Iterable과 Iterator이 무엇이고 어�
 
 자바스크립트의 레퍼런스를 살펴보면 Iterable, Iterator라는 단어를 자주 접할 수 있다. 또한 ES6에 새롭게 추가된 `Set`, `Map` 객체는 Iterable로 평가된다. 심지어 항상 사용하는 `String`, `Array` 또한  Iterable로 평가된다.
 
-이쯤되자, Iterable과 Iterator에 대해 명확한 이해가 필요하다고 생각했다. Iterable, Iterator가 무엇이기에 다양한 영역에서 사용되 것인지 정리해보았다.
+이쯤되자, Iterable과 Iterator에 대해 명확한 이해가 필요하다고 생각했다. Iterable, Iterator가 무엇이기에 다양한 영역에서 사용되는지 정리해보았다.
 
 ## Iteration protocol
 
@@ -47,7 +47,7 @@ Iterator는 Iterable 객체에서 반복을 실행하는 반복기를 뜻한다.
 3. IteratorResult 객체는 `done: boolean`과 `value: any` 프로퍼티를 가진다.
 4. 이전 `next` 메서드 호출의 결과로 `done` 값이 `true`를 리턴했다면, 이후 호출에 대한 `done` 값도 `true`여야 한다.
 
-위와 같이 Iterator 객체가 반환하는 IteratorResult 객체는 `done`과 `value` 프로퍼티를 가진다. `done`은 Iterator의 반복이 모두 완료되었는지를 판별한다. Iterator는 `done` 값이 `true`가 될 때까지 반복을 수행한다. `value`는 각 반복 수행을 하면서 반환하는 값이다.
+3번에서 보듯 Iterator 객체가 반환하는 IteratorResult 객체는 `done`과 `value` 프로퍼티를 가진다. `done`은 Iterator의 반복이 모두 완료되었는지를 판별한다. Iterator는 `done` 값이 `true`가 될 때까지 반복을 수행한다. `value`는 각 반복 수행을 하면서 반환하는 값이다.
 
 ```js
 const iterable = {
@@ -65,7 +65,7 @@ const iterable = {
   }
 }
 
-for(let num of iterable) console.log(num) // 1, 2, ..., 9
+for(let num of iterable) console.log(num) // 0, 1, ..., 9
 ```
 
 ## Well-formed iterable
