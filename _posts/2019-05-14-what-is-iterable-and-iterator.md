@@ -122,9 +122,10 @@ for (num of iter) console.log(num) // 3, 4, ..., 9
 
 ## 마무리
 
-이번 글을 통해 Iterator와 Iterable에 대한 개념을 정리 해볼 수 있었다. 하지만, 직접 Iterator/Iterable 객체를 만드는 것은 번거로운 일이다. 그래서 자바스크립트는 손쉽게 well-formed iterable을 생성 할 수 있는 **[제네레이터 함수](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/function*){:target="_blank"}**를 제공한다. 다음에는 제네레이터에 대해 알아보는 포스팅을 하고자 한다.
+이번 글을 통해 Iterator와 Iterable에 대한 개념을 정리 해볼 수 있었다. 하지만, 직접 Iterator/Iterable 객체를 만드는 것은 번거로운 일이다. 그래서 자바스크립트는 손쉽게 well-formed iterable을 생성 할 수 있는 **[제네레이터 함수](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/function*){:target="_blank"}**를 제공한다. ~~다음에는 제네레이터에 대해 알아보는 포스팅을 하고자 한다.~~ 관련 글은 [여기](https://armadillo-dev.github.io/javascript/what-is-generator/)서 확인 할 수 있다.
+
 
 ## 참고문서
 
-- ECMAScript® 2015 Language Specification / Iteration section - [https://www.ecma-international.org/ecma-262/6.0/#sec-iteration](https://www.ecma-international.org/ecma-262/6.0/#sec-iteration)
-- MDN / iteration protocol - [https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Iteration_protocols](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Iteration_protocols)
+- ECMAScript® 2015 Language Specification / Iteration section - [https://www.ecma-international.org/ecma-262/6.0/#sec-iteration](https://www.ecma-international.org/ecma-262/6.0/#sec-iteration){:target="_blank"}
+- MDN / iteration protocol - [https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Iteration_protocols](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Iteration_protocols){:target="_blank"}
