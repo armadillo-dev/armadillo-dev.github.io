@@ -6,7 +6,8 @@ tags: javascript lazy-loading
 description: "컴퓨터 프로그래밍에서 느긋한 계산법(Lazy evaluation)은 계산의 결과 값이 필요할 때까지 계산을 늦추는 기법이다. 위키피디아에서 지연 평가를 설명하는 문장이다. 지연 평가는 필요 할 때까지 계산을 늦추면서 불필요한 계산을 줄일 수 있다. 이러한 지연 평가는 3가지 이점을 가지고 있다."
 ---
 
-이전 글에서 Iterable/Iterator와 Generator에 대해 알아보았다(*이 글은 이전 글을 읽었다는 가정 하에 작성되었다.*). Generator를 설명하는 글 말미에서 말했듯, 이번 글에서는 지연 평가란 무엇이고 어떻게 성능 개선에 활용할 수 있는지 알아보도록 한다.
+이전 글에서 [Iterable/Iterator](https://armadillo-dev.github.io/javascript/what-is-iterable-and-iterator/){:target="_blank"}와 [Generator](https://armadillo-dev.github.io/javascript/what-is-generator/){:target="_blank"}
+에 대해 알아보았다(*이 글은 이전 글을 읽었다는 가정 하에 작성되었다.*). Generator를 설명하는 글 말미에서 말했듯, 이번 글에서는 지연 평가란 무엇이고 어떻게 성능 개선에 활용할 수 있는지 알아보도록 한다.
 
 ## 지연 평가란?
 
@@ -15,14 +16,14 @@ description: "컴퓨터 프로그래밍에서 느긋한 계산법(Lazy evaluatio
 위키피디아에서 지연 평가를 설명하는 문장이다. 지연 평가는 필요 할 때까지 계산을 늦추면서 불필요한 계산을 줄일 수 있다. 이러한 지연 평가는 3가지 이점을 가지고 있다.
 
 1. 불필요한 계산을 하지 않으므로 빠른 계산이 가능하다.
-2. 즉시 평가되지 않기 때문에 무한 자료 구조를 사용 할 수 있다.
+2. 무한 자료 구조를 사용 할 수 있다.
 3. 복잡한 수식에서 오류 상태를 피할 수 있다.
 
 이번 글에서는 1번 항목을 중심으로 설명하고자 한다.
 
 ## 지연 평가 동작 방식
 
-위해 엄격한 평가(strict evaluation)의 동작 방식과 비교를 통해 지연 평가의 동작 방식을 알아보자. 엄격한 평가는 지연 평가의 반대말로, 수행되는 즉시 계산의 결과를 도출하는 동작 방식을 뜻한다.
+엄격한 평가(strict evaluation)의 동작 방식과 비교를 통해 지연 평가의 동작 방식을 알아보자. 엄격한 평가는 지연 평가의 반대말로, 수행되는 즉시 계산의 결과를 도출하는 동작 방식을 뜻한다.
 
 **0~5로 이루어진 배열에서 10을 더한 뒤, 홀수 2개만 추출하는 로직을 예제로 살펴보자.**
 
@@ -40,7 +41,7 @@ console.log(result) // [11, 13]
 
 엄격한 평가는 평가 흐름이 왼쪽에서 오른쪽으로 흐른다. 아래의 도표를 보면 `map`, `filter`, `slice` 각각의 계산이 모두 종료되어야 다음 단계를 수행하는 것을 알 수 있다. 최종 결과물(**[11, 13]**)을 보면 `4`와 `5`에 대한 계산은 불필요함을 알 수 있다.
 
-따라서 **총 계산 횟수는 14번(`map` 6번, `filter` 6번, `slice` 2번)이 된다.**
+**총 계산 횟수는 14번(`map` 6번, `filter` 6번, `slice` 2번)이 된다.**
 
 ![즉시 평가. 평가 흐름이 왼쪽에서 오른쪽(→)으로 흐른다.](/asserts/images/strict-evaluation-process.png)
 
@@ -62,7 +63,7 @@ console.log(result) // [11, 13]
 
 **동작 방식**
 
-지연 평가는 평가 흐름이 위에서 아래로 흐른다. 아래의 도표를 보면 배열의 각 원들이 `map`, `filter`, `take` 함수를 차례대로 수행한다는 것을 알 수 있다. `3`까지 평가가 완료되었을 때 이미 원하는 결과가 나왔기 때문에, `4`와 `5`에 대한 계산은 하지 않는다.
+지연 평가는 평가 흐름이 위에서 아래로 흐른다. 아래의 도표를 보면 배열의 각 원소들이 `map`, `filter`, `take` 함수를 차례대로 수행한다는 것을 알 수 있다. `3`까지 평가가 완료되었을 때 이미 원하는 결과가 나왔기 때문에, `4`와 `5`에 대한 계산은 하지 않는다.
 
 따라서 **총 계산 횟수는 10번(`map` 4번, `filter` 4번, `take` 2번)이 된다.**
 
@@ -138,6 +139,7 @@ lodash는 위에서 직접 작성했던 것보다 훨씬 다양한 종류의 함
 
 - [[Javascript] Iterable과 Iterator 이해하기](https://armadillo-dev.github.io/javascript/what-is-iterable-and-iterator/){:target="_blank"}
 - [[Javascript] Generator 이해하기](https://armadillo-dev.github.io/javascript/what-is-generator/){:target="_blank"}
+- [[Javascript] 지연 평가(Lazy evaluation) 를 이용한 성능 개선](https://armadillo-dev.github.io/javascript/whit-is-lazy-evaluation/){:target="_blank"}
 
 ## 참고 링크
 
