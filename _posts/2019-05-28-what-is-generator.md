@@ -145,6 +145,12 @@ const iter = gen()
 
 이번 글을 통해 Generator에 대한 개념과 특징에 대해 정리해보았다. 개인적으로 Generator를 이용한 지연 평가는 처음 접했을 때 신세계를 맛보는 기분이었다. 그래서 다음 글에서는 지연 평가에 대해 자세히 다뤄보고자 한다.
 
+## 관련 글
+
+- [[Javascript] Iterable과 Iterator 이해하기](https://armadillo-dev.github.io/javascript/what-is-iterable-and-iterator/){:target="_blank"}
+- [[Javascript] Generator 이해하기](https://armadillo-dev.github.io/javascript/what-is-generator/){:target="_blank"}
+- [[Javascript] 지연 평가(Lazy evaluation) 를 이용한 성능 개선](https://armadillo-dev.github.io/javascript/whit-is-lazy-evaluation/){:target="_blank"}
+
 ## 참고자료
 
 - [ECMAScript® 2015 Language Specification / Generator Function section](https://www.ecma-international.org/ecma-262/6.0/#sec-generator-objects){:target="_blank"}
