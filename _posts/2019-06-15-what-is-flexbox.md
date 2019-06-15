@@ -10,11 +10,9 @@ description: "필자는 웹 페이지의 레이아웃을 구성하기 위해 flo
 
 ## Flex container & Flex item
 
-flexbox는 flex container와 flex item으로 구성된다. **flex containe**r는 flex item들을 감싸서 컨테이너 역할을 하는 DOM 엘리먼트로 `display: flex | flex-inline` 속성을 통해 지정할 수 있다. **flex item**은 ****flex container 하위 DOM 엘리먼트를 뜻한다.
+flexbox는 flex container와 flex item으로 구성된다. **flex containe**r는 flex item들을 감싸서 컨테이너 역할을 하는 DOM 엘리먼트로 `display: flex | flex-inline` 속성을 통해 지정할 수 있다. **flex item**은 flex container 하위 DOM 엘리먼트를 뜻한다.
 
 ![flex container와 flex item들](/asserts/images/img-flex-container-and-items.png)
-
-flex container와 flex item들
 
 ## Flexbox에 존재하는 두 개의 축
 
