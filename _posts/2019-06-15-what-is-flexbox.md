@@ -63,7 +63,7 @@ justify-content: center|flex-start|flex-end|space-around|space-between
 - `space-around`: flex item이 동일한 여백으로 정렬된다. 이 때 flex container의 시작과 끝 지점에는 flex item 사이 여백의 1/2에 해당하는 여백이 들어간다.
 - `space-between`: flex item이 동일한 여백으로 정렬된다. `space-around`와는 다르게 flex container의 시작과 끝에는 여백이 존재하지 않는다.
 
-<iframe width="100%" height="200" src="//codepen.io/armadillo-dev167/embed/xoZLYv/?height=265&theme-id=0&default-tab=result"></iframe>
+<iframe width="100%" height="700" src="//codepen.io/armadillo-dev167/embed/xoZLYv/?height=265&theme-id=0&default-tab=result"></iframe>
 
 ### `align-items`
 
@@ -73,7 +73,7 @@ align-items: flex-start|center|flex-end|stretch
 
 `justify-content` 속성이 main axis에 영향을 준다면, `align-items`는 cross axis 상 위치/여백을 조정하는 속성이다. `flex-start`, `flex-end`, `center`는 바라보는 축만 다를뿐, `justify-content`와 동일한 기능을 수행한다. `stretch`는  flex item의 높이를 cross axis의 길이와 동일하게 세팅한다.
 
-<iframe width="100%" height="200" src="//codepen.io/armadillo-dev167/embed/GboQeX/?height=265&theme-id=0&default-tab=result"></iframe>
+<iframe width="100%" height="800" src="//codepen.io/armadillo-dev167/embed/GboQeX/?height=265&theme-id=0&default-tab=result"></iframe>
 
 ### `flex-wrap`
 
@@ -83,7 +83,7 @@ flex-wrap: nowrap|wrap|wrap-reverse
 
 flexbox는 main axis를 기준으로 1개 라인만 생성된다. 그러나 `flex-wrap` 속성을 `wrap`으로 지정하면 flex container main axis 길이가 flex items 전체 길이보다 작을 경우 다음 라인으로 레이아웃이 밀리게 된다.
 
-<iframe width="100%" height="200" src="//codepen.io/armadillo-dev167/embed/qzbYbw/?height=265&theme-id=0&default-tab=result"></iframe>
+<iframe width="100%" height="450" src="//codepen.io/armadillo-dev167/embed/qzbYbw/?height=265&theme-id=0&default-tab=result"></iframe>
 
 ### `flex-grow`
 
@@ -93,7 +93,7 @@ flex-grow: <number>
 
 `flex-grow` 속성을 지정하면 flex container의 길이가 소속된 flex item들의 길이보다 클 경우, flex item의 길이가 확장되는 비율을 지정할 수 있다. 기본값인 0으로 설정되어 있으면 flex item본연의 길이가 유지된다. 아래 예제를 보면 `flex-grow` 값이 각각 1, 2, 3으로 지정되었을 경우 각 item의 크기도 1, 2, 3배로 지정되는 것을 확인 할 수 있다.
 
-<iframe width="100%" height="200" src="//codepen.io/armadillo-dev167/embed/NZxMbg/?height=265&theme-id=0&default-tab=result"></iframe>
+<iframe width="100%" height="300" src="//codepen.io/armadillo-dev167/embed/NZxMbg/?height=265&theme-id=0&default-tab=result"></iframe>
 
 ### `flex-shrink`
 
@@ -103,7 +103,7 @@ flex-shrink: <number>
 
 `flex-shrink`는 `flex-grow`와 반대로 flex item의 길이가 축소되는 비율을 지정할 수 있다. 아래 예제를 보면 flwx-shrink값이 0인 경우, flex item의 크기(120px + margin 20px)가 flex container를 초과했을 때 크기가 줄어들지 않는다. 이와 반대로 flex-shrink값이 지정되어 있을 경우 비율에 맞게 각 flex item의 길이가 줄어드는 것을 확인 할 수 있다.
 
-<iframe width="100%" height="200" src="//codepen.io/armadillo-dev167/embed/NZxzKz/?height=265&theme-id=0&default-tab=result"></iframe>
+<iframe width="100%" height="320" src="//codepen.io/armadillo-dev167/embed/NZxzKz/?height=265&theme-id=0&default-tab=result"></iframe>
 
 ### `flex-basis`
 
@@ -149,7 +149,7 @@ order: <number>
 }
 ```
 
-<iframe width="100%" height="200" src="//codepen.io/armadillo-dev167/embed/bPEKmZ/?height=265&theme-id=0&default-tab=result"></iframe>
+<iframe width="100%" height="400" src="//codepen.io/armadillo-dev167/embed/bPEKmZ/?height=265&theme-id=0&default-tab=result"></iframe>
 
 ### `margin: auto`를 활용한 콘텐츠 정렬
 
