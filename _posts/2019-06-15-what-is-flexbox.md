@@ -128,7 +128,7 @@ flex: flex-grow flex-shrink flex-basis
 ### `order`
 
 ```css
-oder: <number>
+order: <number>
 ```
 
 `order` 속성을 지정하면 해당 순서에 따라 flex item의 정렬 순서가 변경된다. 아래 예제를 보면 `order: 3` flex item은 실제 DOM 엘리먼트 순서는 가장 첫번째이다. 하지만 `order`  값이 가장 크기 때문에 가장 마지막 위치에 랜더링된다.
