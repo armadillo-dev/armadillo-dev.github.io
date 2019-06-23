@@ -36,7 +36,7 @@ grid-template-columns: none | <track-list> | <auto-track-list>
 
 `grid-template-columns`를 이용해 열의 개수 및 크기를 지정할 수 있다. 예를들어 `100px`로 이루어진 3개의 열을 구성하고 싶을 경우 `grid-template-columns: 100px 100px 100px`로 값을 지정하면 된다. 이를 보다 간결하게 `grid-template-columns: repeat(3, 100px)`  형태로 작성해도 동일한 결과를 얻는다.
 
-<iframe height="265" style="width: 100%;" scrolling="no" title="Gridlayout grid-template-columns" src="//codepen.io/armadillo-dev167/embed/PrWbXz/?height=265&theme-id=0&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="550" style="width: 100%;" scrolling="no" title="Gridlayout grid-template-columns" src="//codepen.io/armadillo-dev167/embed/PrWbXz/?height=265&theme-id=0&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/armadillo-dev167/pen/PrWbXz/'>Gridlayout grid-template-columns</a> by armadillo
   (<a href='https://codepen.io/armadillo-dev167'>@armadillo-dev167</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -51,7 +51,7 @@ grid-template-rows: none | <track-list> | <auto-track-list>
 
 `grid-template-rows`는 행의 개수 및 크기를 지정할 수 있다. 작성 방법은 `grid-template-columns`와 동일하다.
 
-<iframe height="265" style="width: 100%;" scrolling="no" title="Gridlayout grid-template-columns" src="//codepen.io/armadillo-dev167/embed/GbrYPp/?height=265&theme-id=0&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="510" style="width: 100%;" scrolling="no" title="Gridlayout grid-template-columns" src="//codepen.io/armadillo-dev167/embed/GbrYPp/?height=265&theme-id=0&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/armadillo-dev167/pen/PrWbXz/'>Gridlayout grid-template-columns</a> by armadillo
   (<a href='https://codepen.io/armadillo-dev167'>@armadillo-dev167</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -66,7 +66,7 @@ grid-template-areas: none | <string>
 
 `grid-template-areas`에서 전체 레이아웃을 구성하면, `grid-area`을 이용해 레이아웃의 각 요소를 정의할 수 있다.
 
-<iframe height="265" style="width: 100%;" scrolling="no" title="Gridlayout grid-template-columns" src="//codepen.io/armadillo-dev167/embed/zVZLzy/?height=265&theme-id=0&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="360" style="width: 100%;" scrolling="no" title="Gridlayout grid-template-columns" src="//codepen.io/armadillo-dev167/embed/zVZLzy/?height=265&theme-id=0&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/armadillo-dev167/pen/PrWbXz/'>Gridlayout grid-template-columns</a> by armadillo
   (<a href='https://codepen.io/armadillo-dev167'>@armadillo-dev167</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -79,7 +79,7 @@ grid-gap: <row-gap> <column-gap>?
 
 일반적으로 요소 간 여백을 주기 위해서는 `margin`을 사용한다. 그리드 레이아웃에서는 `grid-gap`을 이용해 각 그리드 사이 여백을 설정할 수 있다. 주의할 점은 그리드 **사이**의 여백이기 때문에 그리드 컨테이너의 외곽은 여백이 지정되지 않는다는 점이다. 이렇게 설계된 이유는 그리드 컨테이너에 `padding`값을 이용할 수 있기 때문인 것 같다.
 
-<iframe height="265" style="width: 100%;" scrolling="no" title="Gridlayout grid-template-columns" src="//codepen.io/armadillo-dev167/embed/OeWBeR/?height=265&theme-id=0&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="440" style="width: 100%;" scrolling="no" title="Gridlayout grid-template-columns" src="//codepen.io/armadillo-dev167/embed/OeWBeR/?height=265&theme-id=0&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/armadillo-dev167/pen/PrWbXz/'>Gridlayout grid-template-columns</a> by armadillo
   (<a href='https://codepen.io/armadillo-dev167'>@armadillo-dev167</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -92,7 +92,7 @@ grid-column: <grid-line> [/ <grid-line>] ?
 
 `grid-column`은 **Grid line 번호**를 이용해 해당 그리드 아이템이 몇개의 열을 차지할지 설정할 수 있다. 예를 들어 `grid-column: 1 / 3`일 경우 1번 grid line부터 3번 grid line까지의 열을 차지하게 된다. `span` 키워드를 이용해 특정 grid line이 아닌 칸의 개수를 지정할 수도있다.  `grid-column: span 2`으로 설정하면 해당 gird item이 시작되는 열에서 2칸을 더 차지하게 된다.
 
-<iframe height="265" style="width: 100%;" scrolling="no" title="Gridlayout grid-template-columns" src="//codepen.io/armadillo-dev167/embed/MMpZyR/?height=265&theme-id=0&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="160" style="width: 100%;" scrolling="no" title="Gridlayout grid-template-columns" src="//codepen.io/armadillo-dev167/embed/MMpZyR/?height=265&theme-id=0&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/armadillo-dev167/pen/PrWbXz/'>Gridlayout grid-template-columns</a> by armadillo
   (<a href='https://codepen.io/armadillo-dev167'>@armadillo-dev167</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -105,7 +105,7 @@ grid-row: <grid-line> [/ <grid-line>] ?
 
 `grid-row`는 열이 아닌 행에 대한 grid line을 지정한다는 것만 빼면 `gird-column`과 동일하게 동작한다.
 
-<iframe height="265" style="width: 100%;" scrolling="no" title="Gridlayout grid-template-columns" src="//codepen.io/armadillo-dev167/embed/mZWagj/?height=265&theme-id=0&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="330" style="width: 100%;" scrolling="no" title="Gridlayout grid-template-columns" src="//codepen.io/armadillo-dev167/embed/mZWagj/?height=265&theme-id=0&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/armadillo-dev167/pen/PrWbXz/'>Gridlayout grid-template-columns</a> by armadillo
   (<a href='https://codepen.io/armadillo-dev167'>@armadillo-dev167</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -118,7 +118,7 @@ grid-area: <grid-line> [/ <grid-line>] ? [/ <grid-line>] ? [/ <grid-line>] ? | <
 
 `grid-area`는 `grid-column`과 `grid-row`를 함께 사용할 수 있는 속성이다. `grid-area: 1 / 4 / 1 / 1`과 같이 `grid-area: 시작 열 / 끝 열 / 시작 행 / 끝 행` 순으로 지정할 수 있다. 또한 앞서 보았던 `grid-areas` 에서 지정한 영역의 이름으로 지정하면 해당 영역을 차지하게 된다.
 
-<iframe height="265" style="width: 100%;" scrolling="no" title="Gridlayout grid-template-columns" src="//codepen.io/armadillo-dev167/embed/zVZygN/?height=265&theme-id=0&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="330" style="width: 100%;" scrolling="no" title="Gridlayout grid-template-columns" src="//codepen.io/armadillo-dev167/embed/zVZygN/?height=265&theme-id=0&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/armadillo-dev167/pen/PrWbXz/'>Gridlayout grid-template-columns</a> by armadillo
   (<a href='https://codepen.io/armadillo-dev167'>@armadillo-dev167</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -129,7 +129,7 @@ grid-area: <grid-line> [/ <grid-line>] ? [/ <grid-line>] ? [/ <grid-line>] ? | <
 
 grid-area를 이용하면 손쉽게 전체 페이지 레이아웃을 구성할 수 있다.
 
-<iframe height="265" style="width: 100%;" scrolling="no" title="Gridlayout grid-template-columns" src="//codepen.io/armadillo-dev167/embed/BgWbEm/?height=265&theme-id=0&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="350" style="width: 100%;" scrolling="no" title="Gridlayout grid-template-columns" src="//codepen.io/armadillo-dev167/embed/BgWbEm/?height=265&theme-id=0&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/armadillo-dev167/pen/PrWbXz/'>Gridlayout grid-template-columns</a> by armadillo
   (<a href='https://codepen.io/armadillo-dev167'>@armadillo-dev167</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
