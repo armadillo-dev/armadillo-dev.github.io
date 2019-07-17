@@ -16,7 +16,7 @@ description: "웹폰트는 사용자 로컬에 폰트가 저장되어있지 않�
 
 ### 웹폰트 깜빡임 현상
 
-프로젝트에서는 아이콘을 표시하기 위해 [Material Icons](https://material.io/tools/icons/?style=baseline) 웹폰트를 사용하고 있었다. 그런데 웹폰트가 로드되기 전, 아이콘에 대응되는 영단어가 표시되었다가 로딩이 완료되면 아이콘으로 바뀌는 현상이 발생했다. 서비스에 다수의 아이콘이 존재했기에 이 깜빡임이 더욱 두드러졌고, 사용자 경험을 해치고 있었다.
+프로젝트에서는 아이콘을 표시하기 위해 [Material Icons](https://material.io/tools/icons/?style=baseline){:target="_blank"} 웹폰트를 사용하고 있었다. 그런데 웹폰트가 로드되기 전, 아이콘에 대응되는 영단어가 표시되었다가 로딩이 완료되면 아이콘으로 바뀌는 현상이 발생했다. 서비스에 다수의 아이콘이 존재했기에 이 깜빡임이 더욱 두드러졌고, 사용자 경험을 해치고 있었다.
 
 ![웹폰트 깜빡임 현상](/asserts/images/web-font-loading-non-preload-a79a55f4-88b5-451b-a8e3-7bd19ed064dd.gif)
 
@@ -32,7 +32,7 @@ description: "웹폰트는 사용자 로컬에 폰트가 저장되어있지 않�
 
 ![웹폰트 렌더링 과정](/asserts/images/webfont-rendering-flow.png)
 
-[웹폰트 렌더링 과정 - Google Web Fondamentals](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization)
+[웹폰트 렌더링 과정 - Google Web Fondamentals](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization){:target="_blank"}
 
 브라우저에서 웹폰트 렌더링을 차단하는 방법은 2가지로 나뉜다. IE는 FOUT(Flash of Unstyled Text) 방식을 따르고, 그 외 브라우저는 FOIT(Flash of Invisible Text) 방식을 따른다.
 
@@ -41,13 +41,13 @@ description: "웹폰트는 사용자 로컬에 폰트가 저장되어있지 않�
 
 ![FOIT 방식과 FOUT 방식 비교](/asserts/images/compare-foit-with-fout.gif)
 
-[FOIT 방식과 FOUT 방식 비교 - 네이버 D2](https://d2.naver.com/helloworld/4969726)
+[FOIT 방식과 FOUT 방식 비교 - 네이버 D2](https://d2.naver.com/helloworld/4969726){:target="_blank"}
 
 프로젝트에서 깜빡임 현상이 발생하는 이유도 웹폰트가 로딩되기 전에 Paint text가 발생하고, 웹폰트 로딩이 완료되면 텍스트가 아이콘으로 치환되기 때문이다. 크롬 브라우저에서 `face`라는 텍스트가 노출되는 이유는 FOIT 방식을 따르지만 웹 폰트 로딩에 3초 이상의 시간이 소요되기 때문이다.
 
 ## Preload
 
-문제를 해결하기 위해 `preload`를 이용하기로 했다. `preload`를 이용하면 웹폰트의 로딩 우선순위를 앞으로 끌어당길 수 있다. `preload`에 대한 설명은 [링크](https://medium.com/@koh.yesl/preload-prefetch-and-priorities-in-chrome-15d77326f646)를 참고하자.
+문제를 해결하기 위해 `preload`를 이용하기로 했다. `preload`를 이용하면 웹폰트의 로딩 우선순위를 앞으로 끌어당길 수 있다. `preload`에 대한 설명은 [링크](https://medium.com/@koh.yesl/preload-prefetch-and-priorities-in-chrome-15d77326f646){:target="_blank"}를 참고하자.
 
 먼저 preload를 적용하기 전 리소스 다운로드 순서를 보자. 아래 이미지에서 볼 수 있듯, CSS파일을 먼저 다운로드 한 뒤, 폰트 파일을 다운로드 한다.
 
@@ -81,9 +81,9 @@ font-display: auto | block | swap | fallback | optional;
 
 ## Web font loader
 
-`preload`와 `font-display`를 모두 지원하지 않는 IE에 대응하기 위해 [Web font loader](https://github.com/typekit/webfontloader)를 사용하기로 했다. Web font loader를 이용하면 구글에서 제공하는 폰트를 손쉽게 로드하고 조작할 수 있다(구글이 지원하지 않는 웹폰트도 사용할 수 있다.).
+`preload`와 `font-display`를 모두 지원하지 않는 IE에 대응하기 위해 [Web font loader](https://github.com/typekit/webfontloader){:target="_blank"}를 사용하기로 했다. Web font loader를 이용하면 구글에서 제공하는 폰트를 손쉽게 로드하고 조작할 수 있다(구글이 지원하지 않는 웹폰트도 사용할 수 있다.).
 
-간단한 사용법은 다음과 같다. 아래 코드만 작성하면 Material Icons 폰트를 로드할 수 있다. 
+간단한 사용법은 다음과 같다. 아래 코드만 작성하면 Material Icons 폰트를 로드할 수 있다.
 
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
@@ -124,7 +124,7 @@ Web font loader적용 후, 문구가 노출되지 않고 바로 아이콘이 보
 
 ![브라우저 별 웹폰트 지원 형식](/asserts/images/browser-support-webfont-type.png)
 
-[브라우저 별 웹폰트 지원 형식 - w3schoools.com](https://www.w3schools.com/Css/css3_fonts.asp)
+[브라우저 별 웹폰트 지원 형식 - w3schoools.com](https://www.w3schools.com/Css/css3_fonts.asp){:target="_blank"}
 
 웹폰트를 정의할 때 어떤 타입으로 제공할 것인지 우선순위를 지정할 수 있다.
 
@@ -141,11 +141,11 @@ Web font loader적용 후, 문구가 노출되지 않고 바로 아이콘이 보
 
 ## 서브셋 폰트 사용
 
-서브셋 폰트는 실제 사용할 글자만 남기고 불필요한 글자를 제거한 폰트 파일을 일컫는다. 
+서브셋 폰트는 실제 사용할 글자만 남기고 불필요한 글자를 제거한 폰트 파일을 일컫는다.
 
 한글은 모든 자음과 모음을 조합하면 총 11,172자로 구성되어 있다. 이는 26개의 알파벳으로 구성된 영문에 비해 훨씬 많은 조합이며, 이를 표현하기 위해서는 보다 큰 용량이 필요하다. 하지만 실제 서비스에서는 모든 조합이 필요하지 않다. `걅햟`과 같은 문자는 사용될 여지가 거의 없다. 때문에 2,350자로 구성된 서브셋 폰트를 제공해 폰트 파일의 용량을 줄이는 것이 바람직하다.
 
-서브셋 폰트를 만드는 방법은 [이 글](http://indivdot.github.io/%EC%9B%B9/2016/04/02/webfont.html#section-4)을 참고하자.
+서브셋 폰트를 만드는 방법은 [이 글](http://indivdot.github.io/%EC%9B%B9/2016/04/02/webfont.html#section-4){:target="_blank"}을 참고하자.
 
 Noto sans KR 파일과 서브셋 파일의 용량은 WOFF2 기준(Black, Bold, Medium, Regular, Light) 각각968KB,  664KB로 30%의 차이를 보인다.
 
@@ -207,6 +207,6 @@ Noto sans KR 파일과 서브셋 파일의 용량은 WOFF2 기준(Black, Bold, M
 
 ## 참고 링크
 
-- [웹 폰트 사용과 최적화의 최근 동향 - 네이버 D2](https://d2.naver.com/helloworld/4969726)
-- [웹폰트 최적화 - Google Web Fundamentals](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization?hl=ko)
-- [웹폰트 경량화](http://indivdot.github.io/%EC%9B%B9/2016/04/02/webfont.html)
+- [웹 폰트 사용과 최적화의 최근 동향 - 네이버 D2](https://d2.naver.com/helloworld/4969726){:target="_blank"}
+- [웹폰트 최적화 - Google Web Fundamentals](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization?hl=ko){:target="_blank"}
+- [웹폰트 경량화](http://indivdot.github.io/%EC%9B%B9/2016/04/02/webfont.html){:target="_blank"}
