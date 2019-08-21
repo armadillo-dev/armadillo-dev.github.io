@@ -98,7 +98,7 @@ analytics:
 # Site Author
 author:
   name             : "armadillo"
-  avatar           : "/asserts/images/img-profile-armadillo.jpg"
+  avatar           : "/assets/images/img-profile-armadillo.jpg"
   bio              : "front-end developer"
   location         : "Seoul, Korea"
   email            :
