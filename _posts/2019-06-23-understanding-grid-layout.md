@@ -12,7 +12,7 @@ Grid layout은 [지난 글](https://armadillo-dev.github.io/css/what-is-flexbox/
 
 Grid layout은 행과 열로 구성된다. 표 모양을 떠올리면 쉽게 이해할 수 있다. Grid layout에는 Grid container, Grid item, Grid track, Grid line, Grid cell, Grid area와 같은 구성요소가 존재한다. 각각의 요소를 그림으로 표현하면 다음과 같다.
 
-![그리드 레이아웃 구성요소](/asserts/images/grid-elemtns.png)
+![그리드 레이아웃 구성요소](/assets/images/grid-elemtns.png)
 
 - **Grid container:** 전체 Grid layout을 감싸는 역할을 수행한다. `display: grid | inline-grid` 속성을 통해 지정할 수 있다.
 - **Grid item:** Grid container에 속해있는 하위 DOM 요소를 뜻한다.

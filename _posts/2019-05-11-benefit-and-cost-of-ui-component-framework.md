@@ -6,7 +6,7 @@ tags: ui ux component vuetify
 description: "회사에서 진행중인 프로젝트에 Vuetify를 도입하면서 개인적으로 느낀 UI Component Framework의 장단점을 정리한다."
 ---
 
-![Vuetify](/asserts/images/img-vuetify-a43a19c3-79e3-4284-b311-0a085d9505ab.png)
+![Vuetify](/assets/images/img-vuetify-a43a19c3-79e3-4284-b311-0a085d9505ab.png)
 
 > 회사에서 진행중인 프로젝트에 Vuetify를 도입하면서 개인적으로 느낀 UI Component Framework의 장단점을 정리한다.
 
@@ -30,10 +30,10 @@ UI Component Framework는 버튼, 폼 양식, 다이얼로그 등과 같이 자�
 
 그리고 프론트엔드 개발자라면 필할 수 없는 브라우저 이슈를 해결해준다. 현재 Vuetify의 경우 IE11까지 지원하고 있다. 작성일(2019년 5월) 기준 **한국의 IE 10 이하 점유율은 1%내외**이다. 전세계를 기준으로 할 경우 그 수치는 더욱 낮아진다. 때문에 대부분의 경우 브라우저 관련 이슈는 발생하지 않는다고 봐도 무방하다.
 
-![Vuetify에서 지원하는 브라우저](/asserts/images/img-vuetify-browser-support-af70c280-7c11-47ee-b734-5f9e7614cace.png)
+![Vuetify에서 지원하는 브라우저](/assets/images/img-vuetify-browser-support-af70c280-7c11-47ee-b734-5f9e7614cace.png)
 *Vuetify에서 지원하는 브라우저*
 
-![statcounter의 브라우저 점유율 자료](/asserts/images/bwoser-market-share-in-south-korea-c7d9dbfd-07bb-4615-a58e-f52773cf7630.png)
+![statcounter의 브라우저 점유율 자료](/assets/images/bwoser-market-share-in-south-korea-c7d9dbfd-07bb-4615-a58e-f52773cf7630.png)
 [*statcounter의 브라우저 점유율 자료*](http://gs.statcounter.com/browser-version-market-share/all/south-korea/#monthly-201804-201904){:target="_blank"}
 
 ### 2. 심미성
@@ -73,7 +73,7 @@ DOM 노드의 증가는 네트워크, 런타임, 메모리 방면의 성능 이�
 
 아래는 `v-select`를 표현하기 위해 필요한 DOM 구조이다. `option` 영역이 제외 되었는대도 10개 이상의 DOM노드가 사용되고 있다.
 
-![v-select에 필요한 DOM 노드들](/asserts/images/v-select-dom-tree-3320bfed-77fa-4c6f-87bc-8ef108c05e1c.png)
+![v-select에 필요한 DOM 노드들](/assets/images/v-select-dom-tree-3320bfed-77fa-4c6f-87bc-8ef108c05e1c.png)
 *`v-select`에 필요한 DOM 노드들*
 
 ## 마무리

@@ -14,7 +14,7 @@ HTTP request는 기본적으로 Cross-Site HTTP Requests가 가능하다. 이는
 
 그러나, 보안상의 이유로 브라우저에서는 `<script></script>`로 둘러쌓인 내부에서 작성된 cross-origin HTTP를 제한하고 있다. 예를 들어 [XMLHttpRequest](https://developer.mozilla.org/ko/docs/XMLHttpRequest){:target="_blank"}나 [Fatch API](https://developer.mozilla.org/ko/docs/Web/API/Fetch_API){:target="_blank"}는 [same-origin Policy](https://developer.mozilla.org/ko/docs/Web/Security/Same-origin_policy){:target="_blank"}를 따르기 때문에 올바른 CORS header를 포함하지 않는 한 다른 origin에 request를 할 수 없다. 때문에 서버 개발자는 CORS을 이해하고 스펙을 따라 HTTP request에 응답을 해야한다.
 
-![CORS principle](/asserts/images/img-cors-principle.png)
+![CORS principle](/assets/images/img-cors-principle.png)
 *출처: MDN - CORS*
 
 이 글에서는 CORS 요정의 종류와 관련된 header 속성을 살펴 보도록 하자.
@@ -50,7 +50,7 @@ Simple reqeusts는 문자 그대로 간단한 요청에 해당하며, 아래 조
 - 요청에 사용된 `XMLHttpRequestUpdate` 객체에 이벤트 리스너가 등록되어 있지 않아야 한다.
 - `ReadableStream`가 request에 포함되지 않아야 한다.
 
-![Simple requests diagram](/asserts/images/img-simple-request.png)
+![Simple requests diagram](/assets/images/img-simple-request.png)
 *Simple requests diagram*
 
 #### Simple Reqeusts 예제
@@ -96,7 +96,7 @@ Simple requests의 조건에 해당되지 않은 요청은 Preflighted requests�
 - 먼저 `OPTIONS`을 이용해 서버에 예비 요청을 보내 본 요청이 안전한지 검증한다(예비 요청은 브라우저가 알아서 진행하므로 개발자가 직접 구현하지 않아도 된다.).
 - 그 이후 본 요청을 보내고, 서버는 이에 응답한다.
 
-![Preflighted requests diagram](/asserts/images/img-preflight-request.png)
+![Preflighted requests diagram](/assets/images/img-preflight-request.png)
 *Preflighted requests diagram*
 
 #### Preflighted requests 예제

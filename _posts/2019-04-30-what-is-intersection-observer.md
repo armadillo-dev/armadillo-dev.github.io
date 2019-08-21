@@ -104,7 +104,7 @@ Array
 
 <iframe width="90%" height="400" src="https://cdn.rawgit.com/fallroot/intersectionobserver-examples/master/demo-lazyload.html"></iframe>
 
-![IntersectionObserver를 이용한 이미지 동적 로딩](/asserts/images/lazy-loading-with-intersection-observer.gif)
+![IntersectionObserver를 이용한 이미지 동적 로딩](/assets/images/lazy-loading-with-intersection-observer.gif)
 
 ### 2. 무한 스크롤
 
@@ -157,7 +157,7 @@ observer.observe(document.getElementById('loader'))
 
 아쉽게도 `IntersectionObserver`는 IE에서 지원되지 않는다. 하지만 [W3C에서 작성한 Polyfill](https://github.com/w3c/IntersectionObserver){:target="_blank"}을 적용하면 동일한 인터페이스로 해당 기능을 사용 할 수 있다.
 
-![Can I use IntersectionObserver](/asserts/images/can-i-use-intersection-observer.png)
+![Can I use IntersectionObserver](/assets/images/can-i-use-intersection-observer.png)
 
 ## 참고자료
 

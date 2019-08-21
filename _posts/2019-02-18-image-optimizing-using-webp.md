@@ -17,7 +17,7 @@ WebP 파일은 기존 jpeg 파일 대비 39.8% 압축룰이 개선 되었으며,
 
 안타깝게도, WebP 파일은 IE, Safari 등의 브라우저에서 지원되지 않는다. 때문에 무작정 png파일을 WebP 파일로 변경하면 화면에 제대로 랜더링 되지 않는 낭패를 격을 수 있다.
 
-![Can I use Webp 결과](/asserts/images/can-i-use-webp-browser-support.png)
+![Can I use Webp 결과](/assets/images/can-i-use-webp-browser-support.png)
 *Can I use Webp 결과*
 
 ### HTML에서의 WebP 파일 활용

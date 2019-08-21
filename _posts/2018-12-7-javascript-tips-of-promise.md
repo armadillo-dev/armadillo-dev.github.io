@@ -13,7 +13,7 @@ tags: javascript promise async
 
 회원에 대한 정보를 한개씩 얻어올 수도 있지만, 3명의 회원 정보를 한 번에 요청하고 병렬로 처리하면 전체 처리 속도를 단축시킬 수 있다.
 
-![Promise 사용 유무에 따른 순차 처리와 병렬 처리](/asserts/images/img-promise-parallel-vs-sequential.png)
+![Promise 사용 유무에 따른 순차 처리와 병렬 처리](/assets/images/img-promise-parallel-vs-sequential.png)
 
 아래의 코드를 통해 구현 방법을 살펴보자.
 

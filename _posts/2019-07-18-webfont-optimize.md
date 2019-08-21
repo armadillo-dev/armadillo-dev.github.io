@@ -18,7 +18,7 @@ description: "웹폰트는 사용자 로컬에 폰트가 저장되어있지 않�
 
 프로젝트에서는 아이콘을 표시하기 위해 [Material Icons](https://material.io/tools/icons/?style=baseline){:target="_blank"} 웹폰트를 사용하고 있었다. 그런데 웹폰트가 로드되기 전, 아이콘에 대응되는 영단어가 표시되었다가 로딩이 완료되면 아이콘으로 바뀌는 현상이 발생했다. 서비스에 다수의 아이콘이 존재했기에 이 깜빡임이 더욱 두드러졌고, 사용자 경험을 해치고 있었다.
 
-![웹폰트 깜빡임 현상](/asserts/images/web-font-loading-non-preload-a79a55f4-88b5-451b-a8e3-7bd19ed064dd.gif)
+![웹폰트 깜빡임 현상](/assets/images/web-font-loading-non-preload-a79a55f4-88b5-451b-a8e3-7bd19ed064dd.gif)
 
 웹 폰트가 적용되기 전, face라는 문구가 표시된 이후에 아이콘으로 변환된다.
 
@@ -30,7 +30,7 @@ description: "웹폰트는 사용자 로컬에 폰트가 저장되어있지 않�
 
 첫번째 문제인 깜빡임 현상은 웹폰트 렌더링 과정과 연관되어 있다. 아래 그림을 보자. Paint text가 끝난 시점(텍스트가 화면에 렌더링 된 시점)에 아직 웹폰트 로딩이 완료되지 않았을 경우, 브라우저에 따라 웹폰트 렌더링을 차단한다. 이후 로딩이 완료되면 웹 폰트를 적용해서 텍스트를 렌더링한다.
 
-![웹폰트 렌더링 과정](/asserts/images/webfont-rendering-flow.png)
+![웹폰트 렌더링 과정](/assets/images/webfont-rendering-flow.png)
 
 [웹폰트 렌더링 과정 - Google Web Fondamentals](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization){:target="_blank"}
 
@@ -39,7 +39,7 @@ description: "웹폰트는 사용자 로컬에 폰트가 저장되어있지 않�
 - **FOIT**: 웹폰트가 적용된 텍스트 영역을 여백으로 처리하고, 웹폰트 로딩이 완료되면 해당 폰트를 적용한다. 단, 3초의 제한 시간이 있어 로딩이 3초를 넘어가면 폴백 폰트로 렌더링 한다.
 - **FOUT**: 폴백 폰트를 먼저 표시하고, 웹폰트 로딩이 완료되면 해당 폰트를 적용한다.
 
-![FOIT 방식과 FOUT 방식 비교](/asserts/images/compare-foit-with-fout.gif)
+![FOIT 방식과 FOUT 방식 비교](/assets/images/compare-foit-with-fout.gif)
 
 [FOIT 방식과 FOUT 방식 비교 - 네이버 D2](https://d2.naver.com/helloworld/4969726){:target="_blank"}
 
@@ -51,7 +51,7 @@ description: "웹폰트는 사용자 로컬에 폰트가 저장되어있지 않�
 
 먼저 preload를 적용하기 전 리소스 다운로드 순서를 보자. 아래 이미지에서 볼 수 있듯, CSS파일을 먼저 다운로드 한 뒤, 폰트 파일을 다운로드 한다.
 
-![preload 적용 전 리소스 다운로드 순서](/asserts/images/webfont-network-without-preload.png)
+![preload 적용 전 리소스 다운로드 순서](/assets/images/webfont-network-without-preload.png)
 
 `head` 태그 내부에 다음과 같이 선언해주고 다시 결과를 살펴보자.
 
@@ -61,7 +61,7 @@ description: "웹폰트는 사용자 로컬에 폰트가 저장되어있지 않�
 
 이번에는 웹폰트 파일을 먼저 다운로드하기 시작한다. 이를 통해 깜빡임 현상이 발생하지 않도록 유도할 수 있다. 하지만, `preload`를 이용하더라도 폰트 파일의 로딩이 현저하게 느리면 동일한 현상이 발생하게 된다. 또한  IE는 `preload`를 지원하지 않는 문제점이 있다.
 
-![preload 적용 후 리소스 다운로드 순서](/asserts/images/webfont-loading-with-preload.png)
+![preload 적용 후 리소스 다운로드 순서](/assets/images/webfont-loading-with-preload.png)
 
 ## `font-display` 속성
 
@@ -112,7 +112,7 @@ Web font loader는 지정한 폰트의 다운로드가 완료되면 `html` 태�
 
 Web font loader까지 적용한 뒤, `face` 글자가 노출되지 않는 것을 확인할 수 있다. 예제는 크롬 브라우저이지만, IE도 지원된다.
 
-![Web font loader적용 후 깜빡임 현상 사라짐](/asserts/images/web-font-loading-after-webfontloader.gif)
+![Web font loader적용 후 깜빡임 현상 사라짐](/assets/images/web-font-loading-after-webfontloader.gif)
 
 Web font loader적용 후, 문구가 노출되지 않고 바로 아이콘이 보여진다.
 
@@ -122,7 +122,7 @@ Web font loader적용 후, 문구가 노출되지 않고 바로 아이콘이 보
 
 웹 폰트는 TTF, OTF, EOT, WOFF, WOFF2까지 다양한 형식이 존재한다. 이 중에 WOFF2 형식이 가장 높은 압축률을 자랑한다. 때문에 WOFF2 형식을 기본으로 제공하고, 이를 지원하지 않는 브라우저를 위해 WOFF, TTF 등의 형식을 순차적으로 제공하는 것이 바람직하다.
 
-![브라우저 별 웹폰트 지원 형식](/asserts/images/browser-support-webfont-type.png)
+![브라우저 별 웹폰트 지원 형식](/assets/images/browser-support-webfont-type.png)
 
 [브라우저 별 웹폰트 지원 형식 - w3schoools.com](https://www.w3schools.com/Css/css3_fonts.asp){:target="_blank"}
 
@@ -199,7 +199,7 @@ Noto sans KR 파일과 서브셋 파일의 용량은 WOFF2 기준(Black, Bold, M
 
 덕분에 웹폰트 전체 용량보다 작은 리소스만 다운로드 하게 된다. 아래는 Noto Sans KR 파일을 여러개로 분리해 다운로드 받은 모습이다.
 
-![구글 웹폰트 로딩 화면, 한 개의 폰트가 여러개로 분리되어 있다.](/asserts/images/webfont-loading-unicode-range.png)
+![구글 웹폰트 로딩 화면, 한 개의 폰트가 여러개로 분리되어 있다.](/assets/images/webfont-loading-unicode-range.png)
 
 ## 마무리
 

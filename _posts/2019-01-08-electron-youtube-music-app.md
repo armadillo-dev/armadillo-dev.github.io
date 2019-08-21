@@ -21,10 +21,10 @@ Youtube Music의 경우 별도의 API가 제공되지 않고(Youtube API는 제�
 
 다음 Github 주소에 접속하면 간단한 빌드 방법을 확인 할 수 있다. [저장소 바로가기][link-github]
 
-![Youtube Music Desktop Application Home](/asserts/images/youtube-music-desktop-app-main.png)  
+![Youtube Music Desktop Application Home](/assets/images/youtube-music-desktop-app-main.png)  
 *Youtube Music Desktop Application Home*
 
-![Youtube Music Desktop Application Playlist](/asserts/images/youtube-music-desktop-app-playlist.png)  
+![Youtube Music Desktop Application Playlist](/assets/images/youtube-music-desktop-app-playlist.png)  
 *Youtube Music Desktop Application Playlist*
 
 개발자가 좋은 이유 중 하나는 필요한 것을 직접 만들어 쓸 수 있다는 점이다 :-)

@@ -12,7 +12,7 @@ description: "필자는 웹 페이지의 레이아웃을 구성하기 위해 flo
 
 flexbox는 flex container와 flex item으로 구성된다. **flex containe**r는 flex item들을 감싸서 컨테이너 역할을 하는 DOM 엘리먼트로 `display: flex | flex-inline` 속성을 통해 지정할 수 있다. **flex item**은 flex container 하위 DOM 엘리먼트를 뜻한다.
 
-![flex container와 flex item들](/asserts/images/img-flex-container-and-items.png)
+![flex container와 flex item들](/assets/images/img-flex-container-and-items.png)
 
 ## Flexbox에 존재하는 두 개의 축
 
@@ -24,13 +24,13 @@ flexbox에는 main axis와 cross axis 두 개의 축이 존재한다. **flex ite
 
 main axis는 왼쪽에서 오른쪽으로(→), cross axis는 위에서 아래로(↓) 진행된다. flex item들은 한 줄로 정렬되며, 첫번째 요소가 가장 왼편에 존재하게 된다.
 
-![flex-direction: row일 경우](/asserts/images/flex-direction-row.png)
+![flex-direction: row일 경우](/assets/images/flex-direction-row.png)
 
 ### `flex-direction: column`일 경우
 
 main axis는 위에서 아래로(↓), cross axis는 왼쪽에서 오른쪽으로(→) 진행된다. flex item들은 한 줄에 한 개의 요소만 존재하고 블럭 형태로 쌓이게 된다. 이때 가장 첫번째 요소가 가장 위에 존재한다.
 
-![flex-direction: column일 경우](/asserts/images/flex-direction-column.png)
+![flex-direction: column일 경우](/assets/images/flex-direction-column.png)
 
 ## Flexbox 주요 CSS 속성
 

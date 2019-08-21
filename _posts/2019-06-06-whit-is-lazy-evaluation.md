@@ -43,7 +43,7 @@ console.log(result) // [11, 13]
 
 **총 계산 횟수는 14번(`map` 6번, `filter` 6번, `slice` 2번)이 된다.**
 
-![즉시 평가. 평가 흐름이 왼쪽에서 오른쪽(→)으로 흐른다.](/asserts/images/strict-evaluation-process.png)
+![즉시 평가. 평가 흐름이 왼쪽에서 오른쪽(→)으로 흐른다.](/assets/images/strict-evaluation-process.png)
 
 *즉시 평가. 평가 흐름이 왼쪽에서 오른쪽(→)으로 흐른다.*
 
@@ -67,7 +67,7 @@ console.log(result) // [11, 13]
 
 따라서 **총 계산 횟수는 10번(`map` 4번, `filter` 4번, `take` 2번)이 된다.**
 
-![지연 평가. 평가 흐름이 위에서 아래로(↓) 흐른다.](/asserts/images/lazy-evaluation-process.png)
+![지연 평가. 평가 흐름이 위에서 아래로(↓) 흐른다.](/assets/images/lazy-evaluation-process.png)
 
 *지연 평가. 평가 흐름이 위에서 아래로(↓) 흐른다.*
 
@@ -75,7 +75,7 @@ console.log(result) // [11, 13]
 
 지연 평가는 대상이 크면 클수록 그 효과를 발휘한다. 다음은 위의 예제 코드에서 배열의 원소 개수를 1,000,000개로 수정한 뒤 적용한 [성능 비교 결과](https://jsperf.com/lazy-evaluation-vs-strict-evaluation-armadillo-ko/1){:target="_blank"}이다. 그래프에서 보듯 지연 평가가 압도적인 성능을 자랑한다.
 
-![lazy evaluation vs strict evaluation](/asserts/images/lazy-evalutation-vs-strict-evaluation.png)
+![lazy evaluation vs strict evaluation](/assets/images/lazy-evalutation-vs-strict-evaluation.png)
 *lazy evaluation vs strict evaluation*
 
 ## 지연 평가 활용 함수 만들기

@@ -246,7 +246,7 @@ const row = new Performance('armadillo', 15)
 
 도메인 메서드가 데이터에 접근해야 할 땐, 데이터를 도메인 객체로 복사하고, 양층의 데이터를 동기화하는 observer를 작성해서 비즈니스 로직 처리 코드와 사용자 인터페이스 처리 코드를 분리한다.
 
-![관측 데이터 복제 다이어그램](/asserts/images/refectoring-duplicate-observed-data.png)
+![관측 데이터 복제 다이어그램](/assets/images/refectoring-duplicate-observed-data.png)
 
 ## 7. 클래스의 단방향 연결을 양방향으로 전환(Change Unidirectional Association to Bidirectional)
 
