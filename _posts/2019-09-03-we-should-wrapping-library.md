@@ -10,9 +10,9 @@ description: "우리는 프로젝트를 진행하면서 수많은 외부 라이�
 
 ## Vuetify 2.0 업데이트
 
-필자가 담당하고 있는 프로젝트는 UI를 그릴 때 [Vuetify](https://v15.vuetifyjs.com/)를 사용하고 있다. 그런데 최근 [Vuetify 2.0이 릴리즈](https://github.com/vuetifyjs/vuetify/releases/tag/v2.0.0)되면서 많은 장점(Typescript 지원, SASS 지원 등)들이 생겼고, 현재 프로젝트에도 2.0을 도입하기로 했다.
+필자가 담당하고 있는 프로젝트는 UI를 그릴 때 [Vuetify](https://v15.vuetifyjs.com/){:target="_blank"}를 사용하고 있다. 그런데 최근 [Vuetify 2.0이 릴리즈](https://github.com/vuetifyjs/vuetify/releases/tag/v2.0.0){:target="_blank"}되면서 많은 장점(Typescript 지원, SASS 지원 등)들이 생겼고, 현재 프로젝트에도 2.0을 도입하기로 했다.
 
-필자는 [Upgrade guide](https://github.com/vuetifyjs/vuetify/releases?after=v2.0.4#user-content-upgrade-guide)를 참고해 프로젝트에 Vuetify 2.0 버전을 적용하는 것 까지는 성공했다. 그러나 문제는 그 다음에 발생했다. 컴포넌트의 API가 변경되어 레이아웃이 깨지거나 정상적인 동작을 하지 않는 경우가 빈번하게 발생했다. 
+필자는 [Upgrade guide](https://github.com/vuetifyjs/vuetify/releases?after=v2.0.4#user-content-upgrade-guide){:target="_blank"}를 참고해 프로젝트에 Vuetify 2.0 버전을 적용하는 것 까지는 성공했다. 그러나 문제는 그 다음에 발생했다. 컴포넌트의 API가 변경되어 레이아웃이 깨지거나 정상적인 동작을 하지 않는 경우가 빈번하게 발생했다.
 
 예를 들어 `v-btn` 컴포넌트의 경우 `flat` prop은 `text`로, `round` prop은 `rounded`로 명칭이 변경됐다.
 
@@ -58,7 +58,7 @@ function multiArray(arr, num) {
 }
 ```
 
-*모든 작업을 완료한 후에 [babel-plugin-lodash](https://github.com/lodash/babel-plugin-lodash)의 존재를 알았다. 😭
+*모든 작업을 완료한 후에 [babel-plugin-lodash](https://github.com/lodash/babel-plugin-lodash){:target="_blank"}의 존재를 알았다. 😭
 
 ## 무엇이 문제인가?
 
@@ -67,9 +67,11 @@ function multiArray(arr, num) {
 wrapper를 만들기 전/후의 의존성을 비교하면 다음과 같다.
 
 ![외부 라이브러리 직접 사용](/assets/images/img-library-dependency.png)
+
 *외부 라이브러리를 사용한 파일들이 외부 라이브러리를 직접 바라본다.*
 
 ![Wrapper를 이용한 외부 라이브러리 사용](/assets/images/img-wrapper-library-dependency.png)
+
 *wrapper만 외부 라이브러리를 바라본다.*
 
 Wrapper를 사용하면 외부 라이브러리가 변경되더라도 wrapper만 수정하면 그 외의 파일은 수정이 필요 없다. 그래서 우리는 되도록 외부 라이브러리에 대한 의존성을 낮추기 위해 wrapping 과정을 거치는 것이다.
