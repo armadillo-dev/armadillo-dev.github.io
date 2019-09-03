@@ -90,7 +90,7 @@ Vuetify에서 제공하는 각 컴포넌트를 감싸는 내부 컴포넌트를 
   <v-btn
     v-bind="{ ...$attrs }"
     :text="flat" <- 외부에는 1.x대 API를 유지하면서 내부적으로는 2.x API를 따름
-    v-on="{ ...$listeners }
+    v-on="{ ...$listeners }"
   />
 </template>
 
