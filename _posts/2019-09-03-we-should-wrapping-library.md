@@ -8,6 +8,10 @@ description: "우리는 프로젝트를 진행하면서 수많은 외부 라이�
 
 우리는 프로젝트를 진행하면서 수많은 외부 라이브러리의 도움을 받는다. 많은 사람들이 외부 라이브러리를 사용할 때 wrapping 해서 사용해야 한다고 말한다. 이번 글에서는 왜 많은 사람들이 wrapping을 권고하는지 필자가 겪었던 사례를 통해 알아보고자 한다.
 
+## TLTR;
+
+외부 라이브러리에 대한 의존성을 낮추기 위해 wrapping 과정을 거쳐야 한다. wrapping이 완료되면, 내부 코드는 wrapper에 대한 의존성만 가지게 된다. 덕분에 외부 라이브러리가 변경 되더라도 내부 코드에는 영향이 미치지 않는다.
+
 ## Vuetify 2.0 업데이트
 
 필자가 담당하고 있는 프로젝트는 UI를 그릴 때 [Vuetify](https://v15.vuetifyjs.com/){:target="_blank"}를 사용하고 있다. 그런데 최근 [Vuetify 2.0이 릴리즈](https://github.com/vuetifyjs/vuetify/releases/tag/v2.0.0){:target="_blank"}되면서 많은 장점(Typescript 지원, SASS 지원 등)들이 생겼고, 현재 프로젝트에도 2.0을 도입하기로 했다.
