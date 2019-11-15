@@ -1,5 +1,5 @@
 ---
-title: "[개발 일기 #2] rel="canonical"과 rel="alternate"을 이용한 SEO 최적화"
+title: '[개발 일기 #2] rel="canonical"과 rel="alternate"을 이용한 SEO 최적화'
 date: 2019-11-16 00:00
 categories: dev-diary seo
 tags: dev-diagry seo rel-canonical
