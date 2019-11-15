@@ -1,6 +1,6 @@
 ---
-title: '[개발 일기 #2] rel="canonical"과 rel="alternate"을 이용한 SEO 최적화'
-date: 2019-11-16 00:00
+title: "[개발 일기 #2] rel=canonical과 rel=alternate을 이용한 SEO 최적화"
+date: 2019-11-16 00:20
 categories: dev-diary seo
 tags: dev-diagry seo rel-canonical
 description: "데스크톱 페이지에는 rel=alternate와 media 속성을 이용해 모바일 페이지의 URL을 기록하고, 모바일 페이지에서는 rel=canonical을 이용해 데스크탑 페이지의 URL과 연결시켜주면 된다."
